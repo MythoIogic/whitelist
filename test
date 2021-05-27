@@ -1,11 +1,5 @@
 passcheck = false
-local niggaballkeys = {
-"dick",
-"balls",
-"cock",
-"penis",
-"cbt"
-}
+local niggaballkeys = {"balls", "cock"}
 if table.find(niggaballkeys, getgenv().Key) then
 passcheck = true
 else
