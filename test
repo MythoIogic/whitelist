@@ -1,0 +1,3 @@
+if getgenv().Key == "balls" then
+print("el test :v :v :v :u ._.")
+end
