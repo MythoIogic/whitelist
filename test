@@ -1,7 +1,9 @@
+odwiajdaoisjd = false
 if getgenv().Key == "balls" then
-print("el test :v :v :v :u ._.")
+odwiajdaoisjd = true
 else
-game.Players.LocalPlayer:Kick("nope")
-game:Shutdown()
-while true do print("easy") end
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i just got the easiest key incorrect LOLOL", "All")
+odwiajdaoisjd = false
 end
+repeat wait() until odwiajdaoisjd == true
+print("whitelisted")
