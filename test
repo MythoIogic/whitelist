@@ -3,7 +3,8 @@ local niggaballkeys = {"balls", "cock"}
 if table.find(niggaballkeys, getgenv().Key) then
 passcheck = true
 else
-game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i just got the easiest key incorrect LOLOL", "All")
+print("unwhitelisted")
+--game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i just got the easiest key incorrect LOLOL", "All")
 passcheck = false
 end
 repeat wait() until passcheck == true
