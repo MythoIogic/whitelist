@@ -1,9 +1,16 @@
-odwiajdaoisjd = false
-if getgenv().Key == "balls" then
-odwiajdaoisjd = true
+passcheck = false
+local niggaballkeys = {
+"dick",
+"balls",
+"cock",
+"penis",
+"cbt"
+}
+if table.find(niggaballkeys, getgenv().Key) then
+passcheck = true
 else
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i just got the easiest key incorrect LOLOL", "All")
-odwiajdaoisjd = false
+passcheck = false
 end
-repeat wait() until odwiajdaoisjd == true
+repeat wait() until passcheck == true
 print("whitelisted")
