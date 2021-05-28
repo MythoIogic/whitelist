@@ -1,7 +1,7 @@
-local 387 = {"123key123", "123anotherkey123"}
-if not table.find(387, getgenv().Key) then
+local varname = {"123key123", "123anotherkey123"}
+if not table.find(varname, getgenv().Key) then
 pass = false
-elseif table.find(387, getgenv().Key) then
+elseif table.find(varname, getgenv().Key) then
 pass = true
 end
 if pass ~= true then return end
