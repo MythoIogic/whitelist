@@ -1,8 +1,6 @@
 local niggaballkeys = {"123key123", "123anotherkey123"}
 if not table.find(niggaballkeys, getgenv().Key) then
-print("unwhitelisted")
-game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("unwhitelisted", "All")
-return
+print("unwhitelist")
+elseif table.find(niggaballkeys, getgenv().Key) then
+print("whitelist")
 end
-print("whitelisted")
-game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("whitelisted", "All")
