@@ -1,7 +1,4 @@
-local 387 = {
-"123key123",
-"123anotherkey123"
-}
+local 387 = {"123key123", "123anotherkey123"}
 if not table.find(387, getgenv().Key) then
 pass = false
 elseif table.find(387, getgenv().Key) then
