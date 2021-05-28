@@ -1,6 +1,8 @@
 local niggaballkeys = {"123key123", "123anotherkey123"}
 if not table.find(niggaballkeys, getgenv().Key) then
 return 
-print("unwhitelisted"); game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("unwhitelisted", "All")
+print("unwhitelisted")
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("unwhitelisted", "All")
 end
-print("whitelisted"); game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("whitelisted", "All")
+print("whitelisted")
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("whitelisted", "All")
