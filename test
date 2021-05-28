@@ -1,8 +1,11 @@
+local lp = game.Players.LocalPlayer
 local varname = {"123key123", "123anotherkey123"}
 if not table.find(varname, getgenv().Key) then
 pass = false
+lp:Kick("Incorrect key.")
 elseif table.find(varname, getgenv().Key) then
 pass = true
+print("Granted access, "..lp.Name)
 end
 if pass ~= true then return end
-print("hi")
+--wl end
